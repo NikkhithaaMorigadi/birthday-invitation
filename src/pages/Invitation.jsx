@@ -238,26 +238,19 @@ function Invitation() {
 
         {/* Floating hearts */}
 
-        <div className="floating-heart heart-one">
-          ❤️
-        </div>
+         <div className="birthday-decorations">
+    <span className="decor balloon balloon-1">🎈</span>
+    <span className="decor balloon balloon-2">🎈</span>
+    <span className="decor balloon balloon-3">🎈</span>
 
-        <div className="floating-heart heart-two">
-          ❤️
-        </div>
+    <span className="decor cake cake-1">🎂</span>
+    <span className="decor cake cake-2">🧁</span>
 
-        <div className="floating-heart heart-three">
-          🎂
-        </div>
-        <div className="floating-heart heart-four">
-          🎈
-        </div>
-         <div className="floating-heart heart-five">
-          🎈
-        </div>
-        <div className="floating-heart heart-six">
-          🎂
-        </div>
+    <span className="decor heart heart-1">❤️</span>
+    <span className="decor heart heart-2">💕</span>
+    <span className="decor heart heart-3">💗</span>
+    <span className="decor heart heart-4">💖</span>
+  </div>
 
         {/* Top Logo */}
 

@@ -1409,3 +1409,108 @@
   }
 
 }
+
+/* =========================================
+   MOBILE FIRST - HERO BACKGROUND
+========================================= */
+
+
+
+  @media screen and (max-width: 768px) {
+
+  /* =====================================
+     MOBILE HERO
+  ===================================== */
+
+  .hero-section {
+    position: relative;
+
+    width: 100%;
+    min-height: 100svh;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px 15px;
+
+    box-sizing: border-box;
+  }
+
+
+  /* =====================================
+     MOBILE PHOTO BACKGROUND
+  ===================================== */
+
+  .hero-background-image {
+    position: absolute !important;
+
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    /*
+      IMPORTANT:
+      contain = entire photo is visible
+      cover   = photo gets cropped
+    */
+    background-size: contain !important;
+
+    background-position: center center !important;
+
+    background-repeat: no-repeat !important;
+
+    filter: blur(5px) !important;
+
+    transform: none !important;
+
+    z-index: 0 !important;
+
+    display: block !important;
+  }
+
+
+  /* =====================================
+     LIGHT OVERLAY
+  ===================================== */
+
+  .hero-background-overlay {
+    position: absolute !important;
+
+    inset: 0 !important;
+
+    /*
+       Much lighter than before.
+       This allows the photo to remain visible.
+    */
+    background: rgba(255, 235, 243, 0.18) !important;
+
+    z-index: 1 !important;
+
+    pointer-events: none;
+  }
+
+
+  /* =====================================
+     CONTENT
+  ===================================== */
+
+  .hero-content {
+    position: relative !important;
+
+    z-index: 5 !important;
+
+    width: 92% !important;
+
+    max-width: 500px;
+
+    margin: 0 auto !important;
+
+    text-align: center;
+  }
+
+}
