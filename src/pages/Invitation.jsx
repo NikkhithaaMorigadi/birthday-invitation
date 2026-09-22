@@ -224,7 +224,7 @@ function Invitation() {
       <div
         className="hero-background-image"
         style={{
-          backgroundImage: `url(${invitation.photos[15]})`
+          backgroundImage: `url(${invitation.photos[2]})`
         }}
       ></div>
   )}
@@ -604,18 +604,14 @@ function Invitation() {
         <span></span>
       </div>
 
-          <div className="message-quote quote-left">
-            “
-          </div>
+         
 
           <p className="message-text">
             {invitation.message ||
               "Come celebrate this special day with us and make wonderful memories together!"}
           </p>
 
-          <div className="message-quote quote-right">
-            ”
-          </div>
+          
            <div className="message-bottom-divider">
         <span>🎂</span>
         <span>♥</span>
@@ -631,55 +627,7 @@ function Invitation() {
       </section>
 
 
-      {/* =====================================
-          LOCATION
-      ===================================== */}
-
-      <section className="location-section animate-section">
-
-        <p className="section-label">
-          JOIN US
-        </p>
-
-        <h2>
-          📍 Location
-        </h2>
-
-
-        <div className="location-card">
-
-          <div className="map-placeholder">
-
-            <div className="map-pin">
-              📍
-            </div>
-
-            <h3>
-              {invitation.venue ||
-                "Birthday Venue"}
-            </h3>
-
-            <p>
-              We can't wait to celebrate
-              with you!
-            </p>
-
-          </div>
-
-
-          <button
-            className="location-button"
-            onClick={openLocation}
-            disabled={!invitation.location}
-          >
-
-            📍 OPEN IN GOOGLE MAPS
-
-          </button>
-
-        </div>
-
-      </section>
+      
 
 
       {/* =====================================

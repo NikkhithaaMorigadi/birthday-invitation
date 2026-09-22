@@ -688,33 +688,18 @@
 
 
 .photo-card {
-
-  height: 380px;
-
-  overflow: hidden;
-
-  border-radius: 20px;
-
-  box-shadow:
-    0 20px 40px
-    rgba(100, 40, 60, 0.15);
-
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
 }
 
 
 .photo-card img {
-
-  width: 100%;
-
-  height: 100%;
-
-  object-fit: cover;
-
-  transition:
-    transform 0.7s ease;
-
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center center !important;
 }
-
 
 .photo-card:hover img {
 
@@ -880,13 +865,13 @@
 
 }
 .message-label {
-  font-size: 15px;
+  font-size: 12px;
 
-  letter-spacing: 6px;
+  letter-spacing: 4px;
 
   font-weight: 500;
 
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 
   color: #ffd1df;
 }
@@ -895,7 +880,7 @@
 
   font-family: Georgia, "Times New Roman", serif;
 
-  font-size: 55px;
+  font-size: 19px;
 
   font-weight: 600;
 
@@ -992,7 +977,7 @@
 
   font-family: Georgia, serif;
 
-  font-size: 38px;
+  font-size: 10px;
 
   line-height: 1.5;
 
@@ -1007,7 +992,7 @@
 
   gap: 15px;
 
-  margin: 30px auto 20px;
+  margin: 0px auto 2px;
 }
 
 .message-bottom-divider span:first-child,
@@ -1379,13 +1364,7 @@
   }
 
 
-  .photo-card {
-
-    height: 300px;
-
-  }
-
-
+ 
   .photo-section h2,
   .details-section h2,
   .location-section h2 {
@@ -1397,7 +1376,7 @@
 
   .message-card p {
 
-    font-size: 28px;
+    font-size: 18px;
 
   }
 
@@ -1409,6 +1388,22 @@
   }
 
 }
+ .hero-section {
+    position: relative;
+
+    width: 100%;
+    min-height: 180svh;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px 15px;
+
+    box-sizing: border-box;
+  }
 
 /* =========================================
    MOBILE FIRST - HERO BACKGROUND
@@ -1426,7 +1421,7 @@
     position: relative;
 
     width: 100%;
-    min-height: 100svh;
+    min-height: 80svh;
 
     overflow: hidden;
 
@@ -1447,7 +1442,7 @@
   .hero-background-image {
     position: absolute !important;
 
-    top: 0 !important;
+    top: -117px !important;
     left: 0 !important;
 
     width: 100% !important;
@@ -1458,7 +1453,7 @@
       contain = entire photo is visible
       cover   = photo gets cropped
     */
-    background-size: contain !important;
+    background-size: cover !important;
 
     background-position: center center !important;
 
@@ -1511,6 +1506,119 @@
     margin: 0 auto !important;
 
     text-align: center;
+  }
+   .message-section {
+    width: 100%;
+    min-height: 10svh;
+
+    padding: 0px 0px !important;
+     box-sizing: border-box;
+
+    overflow: hidden;
+  }
+
+    .message-card {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 500px !important;
+
+    /*
+      Card controls the photo size.
+    */
+    min-height: 500px !important;
+
+    margin: 0 auto !important;
+
+    border-radius: 22px !important;
+
+    overflow: hidden !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /* FULL PHONE-SCREEN PHOTO */
+  .message-background {
+    position: absolute !important;
+
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    /*
+      IMPORTANT:
+      contain = complete photo visible
+      cover = cropped photo
+    */
+
+    background-size: contain !important;
+
+    background-position: center center !important;
+
+    background-repeat: no-repeat !important;
+
+    /*
+      Blur the photo
+    */
+    filter: blur(0px) !important;
+
+    /*
+      Prevent blur edges
+    */
+    transform: scale(1.03) !important;
+
+    z-index: 0 !important;
+  }
+    .message-card::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: #4a2635;
+
+    z-index: -1;
+  }
+
+  /* Dark overlay */
+  .message-overlay {
+    position: absolute !important;
+
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+   background: rgba(40, 15, 30, 0.35) !important;
+
+    z-index: 1 !important;
+  }
+
+  /* Text */
+  .message-content {
+    position: absolute !important;
+      top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 3 !important;
+
+    
+
+    max-width: 500px !important;
+
+    margin: 0 auto !important;
+
+    padding: 120px 10px !important;
+
+    text-align: center !important;
+      color: white !important;
   }
 
 }
