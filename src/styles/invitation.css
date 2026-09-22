@@ -955,7 +955,7 @@
 
   z-index: 3;
 
-  margin: 20px auto;
+  margin: 0px auto;
 
   max-width: 750px;
 
@@ -1615,7 +1615,7 @@
 
     margin: 0 auto !important;
 
-    padding: 120px 10px !important;
+    padding: 286px 10px !important;
 
     text-align: center !important;
       color: white !important;

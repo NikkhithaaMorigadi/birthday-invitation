@@ -590,20 +590,11 @@ function Invitation() {
 
     {/* Message content */}
     <div className="message-content">
-          <div className="message-label">
-        A SPECIAL MESSAGE
-      </div>
+          
 
-      <h2 className="message-title">
-        From My Heart
-      </h2>
+    
 
-      <div className="message-divider">
-        <span></span>
-        <span className="message-heart">♥</span>
-        <span></span>
-      </div>
-
+    
          
 
           <p className="message-text">
@@ -613,9 +604,9 @@ function Invitation() {
 
           
            <div className="message-bottom-divider">
-        <span>🎂</span>
+        <span></span>
         <span>♥</span>
-        <span>🎂</span>
+        <span></span>
       </div>
 
       <div className="message-footer">
