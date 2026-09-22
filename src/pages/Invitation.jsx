@@ -253,10 +253,7 @@ function Invitation() {
 
         {/* Top Logo */}
 
-        <div className="invitation-logo">
-          ♡ InviteMe
-        </div>
-
+        
 
         {/* Main Content */}
 

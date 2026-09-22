@@ -2,13 +2,13 @@ const invitationData = {
   name: "Shreyanvi",
   age: "1",
 
-  date: "2026-10-05",
+  date: "2026-09-25",
 
   time: "12:30",
 
   venue: "Birthday Celebration",
 
-  location: "",
+  location: "At Our Home, SaroorNagar",
 
   message:
     "Come celebrate this special day with us and make wonderful memories together!",
