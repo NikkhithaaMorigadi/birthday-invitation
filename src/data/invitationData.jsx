@@ -6,7 +6,7 @@ const invitationData = {
 
   time: "12:30",
 
-  venue: "Birthday Celebration",
+  venue: "At Our Home, SaroorNagar",
 
   location: "At Our Home, SaroorNagar",
 
@@ -14,10 +14,22 @@ const invitationData = {
     "Come celebrate this special day with us and make wonderful memories together!",
 
   photos: [
+    "/images/Family.JPG",
     "/images/Photo1.jpg",
     "/images/Photo2.jpg",
-    "/images/Photo3.jpg",
-    "/images/Photo4.jpg"
+    "/images/Photo4.jpg",
+    "/images/Photo5.JPG",
+    "/images/Photo6.jpg",
+    "/images/Photo7.jpg",
+    "/images/Photo8.jpg",
+    "/images/Photo10.JPG",
+    "/images/Photo11.JPG",
+    "/images/Photo12.JPG",
+    "/images/Photo13.JPG",
+    "/images/Photo15.JPG",
+    "/images/Photo17.JPG",
+    "/images/Photo19.JPG",
+    "/images/photo20.jpg"
   ]
 };
 

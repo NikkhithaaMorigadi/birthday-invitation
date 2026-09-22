@@ -224,7 +224,7 @@ function Invitation() {
       <div
         className="hero-background-image"
         style={{
-          backgroundImage: `url(${invitation.photos[0]})`
+          backgroundImage: `url(${invitation.photos[15]})`
         }}
       ></div>
   )}
@@ -239,17 +239,25 @@ function Invitation() {
         {/* Floating hearts */}
 
         <div className="floating-heart heart-one">
-          ♥
+          ❤️
         </div>
 
         <div className="floating-heart heart-two">
-          ♥
+          ❤️
         </div>
 
         <div className="floating-heart heart-three">
-          ♥
+          🎂
         </div>
-
+        <div className="floating-heart heart-four">
+          🎈
+        </div>
+         <div className="floating-heart heart-five">
+          🎈
+        </div>
+        <div className="floating-heart heart-six">
+          🎂
+        </div>
 
         {/* Top Logo */}
 
@@ -259,7 +267,7 @@ function Invitation() {
 
         <div className="hero-content">
 
-          <p className="hero-small-title">
+          <p  className="hero-small-title" >
             ✦ YOU'RE INVITED ✦
           </p>
 
@@ -267,13 +275,13 @@ function Invitation() {
           <div className="hero-decoration">
             <span></span>
             <span className="heart">
-              ♥
+              🎈🎂❤️
             </span>
             <span></span>
           </div>
 
 
-          <h1>
+          <h1 >
             {invitation.name}
           </h1>
 
@@ -282,7 +290,7 @@ function Invitation() {
 
             <span></span>
 
-            <em>
+            <em >
               Birthday
             </em>
 
@@ -291,7 +299,7 @@ function Invitation() {
           </div>
 
 
-          <h2>
+          <h2 >
             Celebration
           </h2>
 
@@ -421,7 +429,7 @@ function Invitation() {
 
                 <div
                   className="photo-card"
-                  key={index}
+                  key={index }
                 >
 
                   <img
@@ -573,20 +581,58 @@ function Invitation() {
       <section className="message-section animate-section">
 
         <div className="message-card">
+            {/* Blurred birthday photo */}
+    {invitation.photos &&
+      invitation.photos.length > 0 && (
+        <div
+          className="message-background"
+          style={{
+            backgroundImage: `url(${invitation.photos[0]})`
+          }}
+        ></div>
+      )}
 
-          <div className="quote">
+    {/* Dark overlay */}
+    <div className="message-overlay"></div>
+
+    {/* Message content */}
+    <div className="message-content">
+          <div className="message-label">
+        A SPECIAL MESSAGE
+      </div>
+
+      <h2 className="message-title">
+        From My Heart
+      </h2>
+
+      <div className="message-divider">
+        <span></span>
+        <span className="message-heart">♥</span>
+        <span></span>
+      </div>
+
+          <div className="message-quote quote-left">
             “
           </div>
 
-          <p>
+          <p className="message-text">
             {invitation.message ||
               "Come celebrate this special day with us and make wonderful memories together!"}
           </p>
 
-          <div className="quote quote-end">
+          <div className="message-quote quote-right">
             ”
           </div>
+           <div className="message-bottom-divider">
+        <span>🎂</span>
+        <span>♥</span>
+        <span>🎂</span>
+      </div>
 
+      <div className="message-footer">
+        YOUR PRESENCE MEANS EVERYTHING
+      </div>
+</div>
         </div>
 
       </section>
