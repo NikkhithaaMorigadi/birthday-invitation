@@ -31,7 +31,7 @@
 
   background-repeat: no-repeat;
 
-  filter: blur(2px);
+  filter: blur(0px);
 
   transform: scale(1.08);
 
@@ -1464,7 +1464,7 @@
 
     background-repeat: no-repeat !important;
 
-    filter: blur(5px) !important;
+    filter: blur(0px) !important;
 
     transform: none !important;
 
