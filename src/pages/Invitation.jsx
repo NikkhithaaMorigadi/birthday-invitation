@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/invitation.css";
-
+import invitationData from "../data/invitationData";
 function Invitation() {
 
   const [invitation, setInvitation] = useState(null);
@@ -16,22 +16,13 @@ function Invitation() {
   // Load invitation
   // -----------------------------------------
 
-  useEffect(() => {
+ useEffect(() => {
 
-    const savedInvitation =
-      localStorage.getItem("birthdayInvitation");
+  console.log("Published Invitation:", invitationData);
 
-    if (savedInvitation) {
+  setInvitation(invitationData);
 
-      const data = JSON.parse(savedInvitation);
-
-      console.log("Invitation:", data);
-
-      setInvitation(data);
-
-    }
-
-  }, []);
+}, []);
 
 
   // -----------------------------------------

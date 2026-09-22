@@ -7,21 +7,35 @@ import Invitation from "./pages/Invitation";
 function App() {
   return (
     <BrowserRouter>
+
       <Routes>
 
-        <Route path="/" element={<Home />} />
+        {/* Public birthday invitation */}
+        <Route
+          path="/"
+          element={<Invitation />}
+        />
 
+        {/* Invitation creator */}
         <Route
           path="/create"
           element={<CreateInvitation />}
         />
 
+        {/* Direct invitation URL */}
         <Route
           path="/invitation"
           element={<Invitation />}
         />
 
+        {/* Optional home page */}
+        <Route
+          path="/home"
+          element={<Home />}
+        />
+
       </Routes>
+
     </BrowserRouter>
   );
 }
